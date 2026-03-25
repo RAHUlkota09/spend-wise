@@ -1,0 +1,45 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< com.expensetracker:expense-tracker-backend >-------------
+[INFO] Building expense-tracker-backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ expense-tracker-backend ---
+[INFO] Deleting C:\Users\rahul\Downloads\expense-tracker-fullstack\expense-tracker-backend\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ expense-tracker-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ expense-tracker-backend ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 15 source files with javac [debug release 17] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/config/SecurityConfig.java:[72,37] method authenticationProvider in class com.expensetracker.config.SecurityConfig cannot be applied to given types;
+  required: org.springframework.security.crypto.password.PasswordEncoder
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.805 s
+[INFO] Finished at: 2026-03-25T10:59:22+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project expense-tracker-backend: Compilation failure
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/config/SecurityConfig.java:[72,37] method authenticationProvider in class com.expensetracker.config.SecurityConfig cannot be applied to given types;
+[ERROR]   required: org.springframework.security.crypto.password.PasswordEncoder
+[ERROR]   found:    no arguments
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

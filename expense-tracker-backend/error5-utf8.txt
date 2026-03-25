@@ -1,0 +1,233 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< com.expensetracker:expense-tracker-backend >-------------
+[INFO] Building expense-tracker-backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.36/lombok-1.18.36.pom
+Progress (1): 1.1 kB
+Progress (1): 1.5 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.36/lombok-1.18.36.pom (1.5 kB at 1.7 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.1/2.1 MB
+Progress (1): 0.2/2.1 MB
+Progress (1): 0.2/2.1 MB
+Progress (1): 0.2/2.1 MB
+Progress (1): 0.2/2.1 MB
+Progress (1): 0.2/2.1 MB
+Progress (1): 0.2/2.1 MB
+Progress (1): 0.2/2.1 MB
+Progress (1): 0.2/2.1 MB
+Progress (1): 0.2/2.1 MB
+Progress (1): 0.2/2.1 MB
+Progress (1): 0.2/2.1 MB
+Progress (1): 0.2/2.1 MB
+Progress (1): 0.2/2.1 MB
+Progress (1): 0.2/2.1 MB
+Progress (1): 0.2/2.1 MB
+Progress (1): 0.2/2.1 MB
+Progress (1): 0.2/2.1 MB
+Progress (1): 0.2/2.1 MB
+Progress (1): 0.3/2.1 MB
+Progress (1): 0.3/2.1 MB
+Progress (1): 0.3/2.1 MB
+Progress (1): 0.3/2.1 MB
+Progress (1): 0.3/2.1 MB
+Progress (1): 0.3/2.1 MB
+Progress (1): 0.3/2.1 MB
+Progress (1): 0.4/2.1 MB
+Progress (1): 0.4/2.1 MB
+Progress (1): 0.4/2.1 MB
+Progress (1): 0.4/2.1 MB
+Progress (1): 0.4/2.1 MB
+Progress (1): 0.4/2.1 MB
+Progress (1): 0.5/2.1 MB
+Progress (1): 0.5/2.1 MB
+Progress (1): 0.5/2.1 MB
+Progress (1): 0.5/2.1 MB
+Progress (1): 0.5/2.1 MB
+Progress (1): 0.5/2.1 MB
+Progress (1): 0.6/2.1 MB
+Progress (1): 0.6/2.1 MB
+Progress (1): 0.6/2.1 MB
+Progress (1): 0.6/2.1 MB
+Progress (1): 0.6/2.1 MB
+Progress (1): 0.6/2.1 MB
+Progress (1): 0.6/2.1 MB
+Progress (1): 0.7/2.1 MB
+Progress (1): 0.7/2.1 MB
+Progress (1): 0.7/2.1 MB
+Progress (1): 0.7/2.1 MB
+Progress (1): 0.7/2.1 MB
+Progress (1): 0.7/2.1 MB
+Progress (1): 0.8/2.1 MB
+Progress (1): 0.8/2.1 MB
+Progress (1): 0.8/2.1 MB
+Progress (1): 0.8/2.1 MB
+Progress (1): 0.8/2.1 MB
+Progress (1): 0.8/2.1 MB
+Progress (1): 0.9/2.1 MB
+Progress (1): 0.9/2.1 MB
+Progress (1): 0.9/2.1 MB
+Progress (1): 0.9/2.1 MB
+Progress (1): 0.9/2.1 MB
+Progress (1): 0.9/2.1 MB
+Progress (1): 1.0/2.1 MB
+Progress (1): 1.0/2.1 MB
+Progress (1): 1.0/2.1 MB
+Progress (1): 1.0/2.1 MB
+Progress (1): 1.0/2.1 MB
+Progress (1): 1.0/2.1 MB
+Progress (1): 1.0/2.1 MB
+Progress (1): 1.1/2.1 MB
+Progress (1): 1.1/2.1 MB
+Progress (1): 1.1/2.1 MB
+Progress (1): 1.1/2.1 MB
+Progress (1): 1.1/2.1 MB
+Progress (1): 1.1/2.1 MB
+Progress (1): 1.2/2.1 MB
+Progress (1): 1.2/2.1 MB
+Progress (1): 1.2/2.1 MB
+Progress (1): 1.2/2.1 MB
+Progress (1): 1.2/2.1 MB
+Progress (1): 1.2/2.1 MB
+Progress (1): 1.3/2.1 MB
+Progress (1): 1.3/2.1 MB
+Progress (1): 1.3/2.1 MB
+Progress (1): 1.3/2.1 MB
+Progress (1): 1.3/2.1 MB
+Progress (1): 1.3/2.1 MB
+Progress (1): 1.4/2.1 MB
+Progress (1): 1.4/2.1 MB
+Progress (1): 1.4/2.1 MB
+Progress (1): 1.4/2.1 MB
+Progress (1): 1.4/2.1 MB
+Progress (1): 1.4/2.1 MB
+Progress (1): 1.5/2.1 MB
+Progress (1): 1.5/2.1 MB
+Progress (1): 1.5/2.1 MB
+Progress (1): 1.5/2.1 MB
+Progress (1): 1.5/2.1 MB
+Progress (1): 1.5/2.1 MB
+Progress (1): 1.6/2.1 MB
+Progress (1): 1.6/2.1 MB
+Progress (1): 1.6/2.1 MB
+Progress (1): 1.6/2.1 MB
+Progress (1): 1.6/2.1 MB
+Progress (1): 1.6/2.1 MB
+Progress (1): 1.6/2.1 MB
+Progress (1): 1.7/2.1 MB
+Progress (1): 1.7/2.1 MB
+Progress (1): 1.7/2.1 MB
+Progress (1): 1.7/2.1 MB
+Progress (1): 1.7/2.1 MB
+Progress (1): 1.7/2.1 MB
+Progress (1): 1.7/2.1 MB
+Progress (1): 1.8/2.1 MB
+Progress (1): 1.8/2.1 MB
+Progress (1): 1.8/2.1 MB
+Progress (1): 1.8/2.1 MB
+Progress (1): 1.8/2.1 MB
+Progress (1): 1.8/2.1 MB
+Progress (1): 1.9/2.1 MB
+Progress (1): 1.9/2.1 MB
+Progress (1): 1.9/2.1 MB
+Progress (1): 1.9/2.1 MB
+Progress (1): 1.9/2.1 MB
+Progress (1): 1.9/2.1 MB
+Progress (1): 2.0/2.1 MB
+Progress (1): 2.0/2.1 MB
+Progress (1): 2.0/2.1 MB
+Progress (1): 2.0/2.1 MB
+Progress (1): 2.0/2.1 MB
+Progress (1): 2.0/2.1 MB
+Progress (1): 2.1 MB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar (2.1 MB at 4.4 MB/s)
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ expense-tracker-backend ---
+[INFO] Deleting C:\Users\rahul\Downloads\expense-tracker-fullstack\expense-tracker-backend\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ expense-tracker-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ expense-tracker-backend ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 14 source files with javac [debug release 17] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.336 s
+[INFO] Finished at: 2026-03-25T10:35:29+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project expense-tracker-backend: Fatal error compiling: java.lang.ExceptionInInitializerError: com.sun.tools.javac.code.TypeTag :: UNKNOWN -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

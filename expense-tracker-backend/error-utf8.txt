@@ -1,0 +1,405 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< com.expensetracker:expense-tracker-backend >-------------
+[INFO] Building expense-tracker-backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.3.2/maven-clean-plugin-3.3.2.pom
+Progress (1): 798 B
+Progress (1): 1.7 kB
+Progress (1): 4.4 kB
+Progress (1): 5.3 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.3.2/maven-clean-plugin-3.3.2.pom (5.3 kB at 4.0 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/40/maven-plugins-40.pom
+Progress (1): 773 B
+Progress (1): 1.8 kB
+Progress (1): 4.2 kB
+Progress (1): 6.6 kB
+Progress (1): 8.1 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/40/maven-plugins-40.pom (8.1 kB at 72 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/40/maven-parent-40.pom
+Progress (1): 807 B
+Progress (1): 1.8 kB
+Progress (1): 3.4 kB
+Progress (1): 7.1 kB
+Progress (1): 11 kB 
+Progress (1): 15 kB
+Progress (1): 19 kB
+Progress (1): 23 kB
+Progress (1): 26 kB
+Progress (1): 27 kB
+Progress (1): 30 kB
+Progress (1): 32 kB
+Progress (1): 36 kB
+Progress (1): 39 kB
+Progress (1): 41 kB
+Progress (1): 43 kB
+Progress (1): 49 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/40/maven-parent-40.pom (49 kB at 457 kB/s)
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ expense-tracker-backend ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.pom
+Progress (1): 724 B
+Progress (1): 1.8 kB
+Progress (1): 3.9 kB
+Progress (1): 8.3 kB
+Progress (1): 8.7 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.pom (8.7 kB at 86 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/13/plexus-13.pom
+Progress (1): 693 B
+Progress (1): 1.7 kB
+Progress (1): 5.3 kB
+Progress (1): 8.3 kB
+Progress (1): 9.6 kB
+Progress (1): 11 kB 
+Progress (1): 16 kB
+Progress (1): 18 kB
+Progress (1): 21 kB
+Progress (1): 26 kB
+Progress (1): 27 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/13/plexus-13.pom (27 kB at 322 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.jar
+Progress (1): 0.9/192 kB
+Progress (1): 2.3/192 kB
+Progress (1): 3.6/192 kB
+Progress (1): 5.0/192 kB
+Progress (1): 6.4/192 kB
+Progress (1): 7.7/192 kB
+Progress (1): 9.1/192 kB
+Progress (1): 10/192 kB 
+Progress (1): 12/192 kB
+Progress (1): 13/192 kB
+Progress (1): 15/192 kB
+Progress (1): 16/192 kB
+Progress (1): 17/192 kB
+Progress (1): 19/192 kB
+Progress (1): 20/192 kB
+Progress (1): 21/192 kB
+Progress (1): 23/192 kB
+Progress (1): 24/192 kB
+Progress (1): 25/192 kB
+Progress (1): 29/192 kB
+Progress (1): 33/192 kB
+Progress (1): 37/192 kB
+Progress (1): 41/192 kB
+Progress (1): 46/192 kB
+Progress (1): 50/192 kB
+Progress (1): 54/192 kB
+Progress (1): 58/192 kB
+Progress (1): 63/192 kB
+Progress (1): 67/192 kB
+Progress (1): 71/192 kB
+Progress (1): 75/192 kB
+Progress (1): 80/192 kB
+Progress (1): 84/192 kB
+Progress (1): 88/192 kB
+Progress (1): 92/192 kB
+Progress (1): 96/192 kB
+Progress (1): 101/192 kB
+Progress (1): 105/192 kB
+Progress (1): 109/192 kB
+Progress (1): 113/192 kB
+Progress (1): 118/192 kB
+Progress (1): 122/192 kB
+Progress (1): 126/192 kB
+Progress (1): 130/192 kB
+Progress (1): 135/192 kB
+Progress (1): 139/192 kB
+Progress (1): 143/192 kB
+Progress (1): 147/192 kB
+Progress (1): 151/192 kB
+Progress (1): 156/192 kB
+Progress (1): 160/192 kB
+Progress (1): 164/192 kB
+Progress (1): 168/192 kB
+Progress (1): 173/192 kB
+Progress (1): 177/192 kB
+Progress (1): 181/192 kB
+Progress (1): 185/192 kB
+Progress (1): 189/192 kB
+Progress (1): 192 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.jar (192 kB at 1.0 MB/s)
+[INFO] Deleting C:\Users\rahul\Downloads\expense-tracker-fullstack\expense-tracker-backend\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ expense-tracker-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ expense-tracker-backend ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 14 source files with javac [debug release 17] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/config/JwtAuthFilter.java:[22,27] variable jwtUtil not initialized in the default constructor
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/config/JwtAuthFilter.java:[23,31] variable userService not initialized in the default constructor
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/UserService.java:[23,46] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/UserService.java:[26,53] cannot find symbol
+  symbol:   method getPassword()
+  location: variable user of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/UserService.java:[48,21] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/UserService.java:[48,38] cannot find symbol
+  symbol:   method getPassword()
+  location: variable user of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[29,44] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.expensetracker.dto.AuthDTO.RegisterRequest
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[34,29] cannot find symbol
+  symbol:   method getName()
+  location: variable request of type com.expensetracker.dto.AuthDTO.RegisterRequest
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[35,30] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.expensetracker.dto.AuthDTO.RegisterRequest
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[36,33] cannot find symbol
+  symbol:   method getPassword()
+  location: variable request of type com.expensetracker.dto.AuthDTO.RegisterRequest
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[39,71] cannot find symbol
+  symbol:   method getEmail()
+  location: variable saved of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[42,71] cannot find symbol
+  symbol:   method getUserId()
+  location: variable saved of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[42,90] cannot find symbol
+  symbol:   method getName()
+  location: variable saved of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[42,107] cannot find symbol
+  symbol:   method getEmail()
+  location: variable saved of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[49,68] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.expensetracker.dto.AuthDTO.LoginRequest
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[49,88] cannot find symbol
+  symbol:   method getPassword()
+  location: variable request of type com.expensetracker.dto.AuthDTO.LoginRequest
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[55,52] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.expensetracker.dto.AuthDTO.LoginRequest
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[57,70] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[60,70] cannot find symbol
+  symbol:   method getUserId()
+  location: variable user of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[60,88] cannot find symbol
+  symbol:   method getName()
+  location: variable user of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[60,104] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[24,16] cannot find symbol
+  symbol:   method setUser(com.expensetracker.model.User)
+  location: variable expense of type com.expensetracker.model.Expense
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[25,32] cannot find symbol
+  symbol:   method getCategory()
+  location: variable dto of type com.expensetracker.dto.ExpenseDTO.Request
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[26,30] cannot find symbol
+  symbol:   method getAmount()
+  location: variable dto of type com.expensetracker.dto.ExpenseDTO.Request
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[27,35] cannot find symbol
+  symbol:   method getDescription()
+  location: variable dto of type com.expensetracker.dto.ExpenseDTO.Request
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[28,35] cannot find symbol
+  symbol:   method getExpenseDate()
+  location: variable dto of type com.expensetracker.dto.ExpenseDTO.Request
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[43,21] cannot find symbol
+  symbol:   method getUser()
+  location: variable expense of type com.expensetracker.model.Expense
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[43,55] cannot find symbol
+  symbol:   method getUserId()
+  location: variable user of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[51,32] cannot find symbol
+  symbol:   method getCategory()
+  location: variable dto of type com.expensetracker.dto.ExpenseDTO.Request
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[52,30] cannot find symbol
+  symbol:   method getAmount()
+  location: variable dto of type com.expensetracker.dto.ExpenseDTO.Request
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[53,35] cannot find symbol
+  symbol:   method getDescription()
+  location: variable dto of type com.expensetracker.dto.ExpenseDTO.Request
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[54,35] cannot find symbol
+  symbol:   method getExpenseDate()
+  location: variable dto of type com.expensetracker.dto.ExpenseDTO.Request
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[84,33] cannot find symbol
+  symbol:   method getExpenseId()
+  location: variable expense of type com.expensetracker.model.Expense
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[85,32] cannot find symbol
+  symbol:   method getCategory()
+  location: variable expense of type com.expensetracker.model.Expense
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[86,30] cannot find symbol
+  symbol:   method getAmount()
+  location: variable expense of type com.expensetracker.model.Expense
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[87,35] cannot find symbol
+  symbol:   method getDescription()
+  location: variable expense of type com.expensetracker.model.Expense
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[88,35] cannot find symbol
+  symbol:   method getExpenseDate()
+  location: variable expense of type com.expensetracker.model.Expense
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[89,35] cannot find symbol
+  symbol:   method getCreatedTime()
+  location: variable expense of type com.expensetracker.model.Expense
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/ExpenseController.java:[39,35] cannot find symbol
+  symbol:   method getCategory()
+  location: variable e of type com.expensetracker.model.Expense
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/ExpenseController.java:[79,16] cannot find symbol
+  symbol:   method setTotalExpenses(java.math.BigDecimal)
+  location: variable summary of type com.expensetracker.dto.ExpenseDTO.SummaryResponse
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/ExpenseController.java:[80,16] cannot find symbol
+  symbol:   method setMonthlyExpenses(java.math.BigDecimal)
+  location: variable summary of type com.expensetracker.dto.ExpenseDTO.SummaryResponse
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/ExpenseController.java:[81,16] cannot find symbol
+  symbol:   method setCategoryBreakdown(java.util.Map<java.lang.String,java.math.BigDecimal>)
+  location: variable summary of type com.expensetracker.dto.ExpenseDTO.SummaryResponse
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/ExpenseController.java:[82,16] cannot find symbol
+  symbol:   method setRecentExpenses(java.util.List<com.expensetracker.dto.ExpenseDTO.Response>)
+  location: variable summary of type com.expensetracker.dto.ExpenseDTO.SummaryResponse
+[INFO] 43 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.400 s
+[INFO] Finished at: 2026-03-25T10:28:41+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project expense-tracker-backend: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/config/JwtAuthFilter.java:[22,27] variable jwtUtil not initialized in the default constructor
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/config/JwtAuthFilter.java:[23,31] variable userService not initialized in the default constructor
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/UserService.java:[23,46] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/UserService.java:[26,53] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable user of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/UserService.java:[48,21] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/UserService.java:[48,38] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable user of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[29,44] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.expensetracker.dto.AuthDTO.RegisterRequest
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[34,29] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable request of type com.expensetracker.dto.AuthDTO.RegisterRequest
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[35,30] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.expensetracker.dto.AuthDTO.RegisterRequest
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[36,33] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable request of type com.expensetracker.dto.AuthDTO.RegisterRequest
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[39,71] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable saved of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[42,71] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable saved of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[42,90] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable saved of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[42,107] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable saved of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[49,68] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.expensetracker.dto.AuthDTO.LoginRequest
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[49,88] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable request of type com.expensetracker.dto.AuthDTO.LoginRequest
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[55,52] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.expensetracker.dto.AuthDTO.LoginRequest
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[57,70] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[60,70] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[60,88] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable user of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/AuthController.java:[60,104] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[24,16] cannot find symbol
+[ERROR]   symbol:   method setUser(com.expensetracker.model.User)
+[ERROR]   location: variable expense of type com.expensetracker.model.Expense
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[25,32] cannot find symbol
+[ERROR]   symbol:   method getCategory()
+[ERROR]   location: variable dto of type com.expensetracker.dto.ExpenseDTO.Request
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[26,30] cannot find symbol
+[ERROR]   symbol:   method getAmount()
+[ERROR]   location: variable dto of type com.expensetracker.dto.ExpenseDTO.Request
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[27,35] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable dto of type com.expensetracker.dto.ExpenseDTO.Request
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[28,35] cannot find symbol
+[ERROR]   symbol:   method getExpenseDate()
+[ERROR]   location: variable dto of type com.expensetracker.dto.ExpenseDTO.Request
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[43,21] cannot find symbol
+[ERROR]   symbol:   method getUser()
+[ERROR]   location: variable expense of type com.expensetracker.model.Expense
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[43,55] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.expensetracker.model.User
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[51,32] cannot find symbol
+[ERROR]   symbol:   method getCategory()
+[ERROR]   location: variable dto of type com.expensetracker.dto.ExpenseDTO.Request
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[52,30] cannot find symbol
+[ERROR]   symbol:   method getAmount()
+[ERROR]   location: variable dto of type com.expensetracker.dto.ExpenseDTO.Request
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[53,35] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable dto of type com.expensetracker.dto.ExpenseDTO.Request
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[54,35] cannot find symbol
+[ERROR]   symbol:   method getExpenseDate()
+[ERROR]   location: variable dto of type com.expensetracker.dto.ExpenseDTO.Request
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[84,33] cannot find symbol
+[ERROR]   symbol:   method getExpenseId()
+[ERROR]   location: variable expense of type com.expensetracker.model.Expense
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[85,32] cannot find symbol
+[ERROR]   symbol:   method getCategory()
+[ERROR]   location: variable expense of type com.expensetracker.model.Expense
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[86,30] cannot find symbol
+[ERROR]   symbol:   method getAmount()
+[ERROR]   location: variable expense of type com.expensetracker.model.Expense
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[87,35] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable expense of type com.expensetracker.model.Expense
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[88,35] cannot find symbol
+[ERROR]   symbol:   method getExpenseDate()
+[ERROR]   location: variable expense of type com.expensetracker.model.Expense
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/service/ExpenseService.java:[89,35] cannot find symbol
+[ERROR]   symbol:   method getCreatedTime()
+[ERROR]   location: variable expense of type com.expensetracker.model.Expense
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/ExpenseController.java:[39,35] cannot find symbol
+[ERROR]   symbol:   method getCategory()
+[ERROR]   location: variable e of type com.expensetracker.model.Expense
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/ExpenseController.java:[79,16] cannot find symbol
+[ERROR]   symbol:   method setTotalExpenses(java.math.BigDecimal)
+[ERROR]   location: variable summary of type com.expensetracker.dto.ExpenseDTO.SummaryResponse
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/ExpenseController.java:[80,16] cannot find symbol
+[ERROR]   symbol:   method setMonthlyExpenses(java.math.BigDecimal)
+[ERROR]   location: variable summary of type com.expensetracker.dto.ExpenseDTO.SummaryResponse
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/ExpenseController.java:[81,16] cannot find symbol
+[ERROR]   symbol:   method setCategoryBreakdown(java.util.Map<java.lang.String,java.math.BigDecimal>)
+[ERROR]   location: variable summary of type com.expensetracker.dto.ExpenseDTO.SummaryResponse
+[ERROR] /C:/Users/rahul/Downloads/expense-tracker-fullstack/expense-tracker-backend/src/main/java/com/expensetracker/controller/ExpenseController.java:[82,16] cannot find symbol
+[ERROR]   symbol:   method setRecentExpenses(java.util.List<com.expensetracker.dto.ExpenseDTO.Response>)
+[ERROR]   location: variable summary of type com.expensetracker.dto.ExpenseDTO.SummaryResponse
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
