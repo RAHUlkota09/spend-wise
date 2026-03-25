@@ -1,0 +1,18 @@
+services:
+  # 🔹 Spring Boot Backend
+  - type: web
+    name: spend-wise-backend
+    runtime: docker
+    plan: free
+    rootDir: expense-tracker-backend
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/*.jar
+
+  # 🔹 React Frontend
+  - type: web
+    name: spend-wise-frontend
+    runtime: node
+    plan: free
+    rootDir: expense-tracker-frontend
+    buildCommand: npm install && npm run build
+    startCommand: npx serve -s build
