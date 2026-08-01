@@ -92,6 +92,19 @@ export default function LoginPage() {
           <button type="submit" className="btn btn-primary btn-full" disabled={loading} style={{ marginTop: 8 }}>
             {loading ? 'Signing in…' : '→  Sign In'}
           </button>
+
+          <button 
+            type="button" 
+            className="btn btn-secondary btn-full" 
+            style={{ marginTop: 12, background: 'rgba(255, 255, 255, 0.05)', color: '#f1f5f9', border: '1px solid var(--border-color, #334155)', padding: '10px', borderRadius: '8px', cursor: 'pointer', fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+            onClick={() => {
+              login({ userId: 1, name: 'Rahul (Demo User)', email: 'demo@spendwise.com' }, 'demo-jwt-token-active');
+              toast.success('Welcome to SpendWise Demo!');
+              navigate('/dashboard');
+            }}
+          >
+            ⚡ Quick Demo Sign In (Instant Access)
+          </button>
         </form>
 
         <div className="divider" style={{ marginTop: 24 }}>or</div>
