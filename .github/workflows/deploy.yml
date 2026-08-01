@@ -36,8 +36,8 @@ jobs:
           REACT_APP_API_URL: "https://spend-wise-backend.onrender.com"
           PUBLIC_URL: "https://rahulkota09.github.io/spend-wise"
         run: |
-          npm ci || npm install
-          npm run build
+          npm install
+          npx react-scripts build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
