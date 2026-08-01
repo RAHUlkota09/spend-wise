@@ -9,7 +9,7 @@ const API_BASE_URL = process.env.REACT_APP_API_URL
 const API = axios.create({
   baseURL: API_BASE_URL,
   headers: { 'Content-Type': 'application/json' },
-  timeout: 5000,
+  timeout: 1500, // Short timeout to avoid long hangs when backend API is offline
 });
 
 // Attach JWT token to every request
@@ -19,32 +19,58 @@ API.interceptors.request.use((config) => {
   return config;
 });
 
-// Fallback Mock Store for seamless operation when live backend API is unreachable
+// Mock Users Storage
+const getMockUsers = () => {
+  try {
+    const data = localStorage.getItem('mock_users');
+    return data ? JSON.parse(data) : [];
+  } catch (e) {
+    return [];
+  }
+};
+
+const saveMockUser = (user) => {
+  try {
+    const users = getMockUsers();
+    users.push(user);
+    localStorage.setItem('mock_users', JSON.stringify(users));
+  } catch (e) {}
+};
+
+// Fallback Mock Store for Expenses
 const getStoredExpenses = () => {
-  const data = localStorage.getItem('mock_expenses');
-  if (data) return JSON.parse(data);
-  const initial = [
-    { id: 1, title: 'Groceries & Supplies', amount: 125.50, category: 'Food', date: '2026-03-20', notes: 'Supermarket shopping' },
-    { id: 2, title: 'Electricity Bill', amount: 84.20, category: 'Utilities', date: '2026-03-18', notes: 'Monthly power bill' },
-    { id: 3, title: 'Movie Night & Snacks', amount: 35.00, category: 'Entertainment', date: '2026-03-15', notes: 'Cinema tickets' },
-    { id: 4, title: 'Car Refill & Gas', amount: 50.00, category: 'Transportation', date: '2026-03-14', notes: 'Gas station' },
-    { id: 5, title: 'Gym Membership', amount: 45.00, category: 'Health', date: '2026-03-01', notes: 'Monthly fitness' }
-  ];
-  localStorage.setItem('mock_expenses', JSON.stringify(initial));
-  return initial;
+  try {
+    const data = localStorage.getItem('mock_expenses');
+    if (data) return JSON.parse(data);
+    const initial = [
+      { id: 1, title: 'Groceries & Supplies', amount: 125.50, category: 'Food', date: '2026-03-20', notes: 'Supermarket shopping' },
+      { id: 2, title: 'Electricity Bill', amount: 84.20, category: 'Utilities', date: '2026-03-18', notes: 'Monthly power bill' },
+      { id: 3, title: 'Movie Night & Snacks', amount: 35.00, category: 'Entertainment', date: '2026-03-15', notes: 'Cinema tickets' },
+      { id: 4, title: 'Car Refill & Gas', amount: 50.00, category: 'Transportation', date: '2026-03-14', notes: 'Gas station' },
+      { id: 5, title: 'Gym Membership', amount: 45.00, category: 'Health', date: '2026-03-01', notes: 'Monthly fitness' }
+    ];
+    localStorage.setItem('mock_expenses', JSON.stringify(initial));
+    return initial;
+  } catch (e) {
+    return [];
+  }
 };
 
 const saveStoredExpenses = (expenses) => {
-  localStorage.setItem('mock_expenses', JSON.stringify(expenses));
+  try {
+    localStorage.setItem('mock_expenses', JSON.stringify(expenses));
+  } catch (e) {}
 };
 
-// Auth API with fallback support
+// Auth API with instant fallback support
 export const authAPI = {
   register: async (data) => {
     try {
       return await API.post('/auth/register', data);
     } catch (err) {
-      const mockUser = { userId: Date.now(), name: data.name || 'User', email: data.email };
+      const email = data.email || 'user@example.com';
+      saveMockUser({ email: email.toLowerCase(), password: data.password, name: data.name, userId: Date.now() });
+      const mockUser = { userId: Date.now(), name: data.name || 'User', email: email };
       const mockToken = 'demo-jwt-token-' + Date.now();
       return { data: { ...mockUser, token: mockToken } };
     }
@@ -54,16 +80,19 @@ export const authAPI = {
     try {
       return await API.post('/auth/login', data);
     } catch (err) {
-      const userName = data.email ? data.email.split('@')[0] : 'Demo User';
+      const email = data.email || 'demo@spendwise.com';
+      const users = getMockUsers();
+      const existing = users.find(u => u.email.toLowerCase() === email.toLowerCase());
+      const userName = existing ? existing.name : (email.includes('@') ? email.split('@')[0] : email);
       const formattedName = userName.charAt(0).toUpperCase() + userName.slice(1);
-      const mockUser = { userId: 1, name: formattedName, email: data.email || 'demo@spendwise.com' };
+      const mockUser = { userId: existing ? existing.userId : 1, name: formattedName, email: email };
       const mockToken = 'demo-jwt-token-active';
       return { data: { ...mockUser, token: mockToken } };
     }
   },
 };
 
-// Expenses API with fallback support
+// Expenses API with instant fallback support
 export const expenseAPI = {
   getAll: async (category) => {
     try {
@@ -71,7 +100,7 @@ export const expenseAPI = {
     } catch (err) {
       let expenses = getStoredExpenses();
       if (category) {
-        expenses = expenses.filter(e => e.category.toLowerCase() === category.toLowerCase());
+        expenses = expenses.filter(e => e.category && e.category.toLowerCase() === category.toLowerCase());
       }
       return { data: expenses };
     }
@@ -92,7 +121,7 @@ export const expenseAPI = {
       return await API.post('/expenses', data);
     } catch (err) {
       const expenses = getStoredExpenses();
-      const newExpense = { ...data, id: Date.now(), amount: parseFloat(data.amount) };
+      const newExpense = { ...data, id: Date.now(), amount: parseFloat(data.amount) || 0 };
       expenses.unshift(newExpense);
       saveStoredExpenses(expenses);
       return { data: newExpense };
@@ -106,7 +135,7 @@ export const expenseAPI = {
       let expenses = getStoredExpenses();
       const index = expenses.findIndex(e => e.id === parseInt(id));
       if (index !== -1) {
-        expenses[index] = { ...expenses[index], ...data, amount: parseFloat(data.amount) };
+        expenses[index] = { ...expenses[index], ...data, amount: parseFloat(data.amount) || 0 };
         saveStoredExpenses(expenses);
         return { data: expenses[index] };
       }

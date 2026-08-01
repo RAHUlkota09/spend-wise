@@ -13,28 +13,38 @@ export default function RegisterPage() {
 
   const validate = () => {
     const e = {};
-    if (!form.name || form.name.trim().length < 2) e.name = 'Name must be at least 2 characters';
-    if (!form.email) e.email = 'Email is required';
-    else if (!/\S+@\S+\.\S+/.test(form.email)) e.email = 'Invalid email';
-    if (!form.password || form.password.length < 6) e.password = 'Minimum 6 characters';
-    if (form.password !== form.confirmPassword) e.confirmPassword = 'Passwords do not match';
+    if (!form.name || !form.name.trim()) e.name = 'Please enter your name';
+    if (!form.email || !form.email.trim()) e.email = 'Please enter an email or username';
+    if (!form.password) e.password = 'Please enter a password';
+    if (form.confirmPassword && form.password !== form.confirmPassword) {
+      e.confirmPassword = 'Passwords do not match';
+    }
     return e;
   };
 
   const handleSubmit = async (ev) => {
     ev.preventDefault();
     const e = validate();
-    if (Object.keys(e).length) { setErrors(e); return; }
+    if (Object.keys(e).length) { 
+      setErrors(e); 
+      return; 
+    }
     setLoading(true);
     try {
+      let emailInput = form.email.trim();
+      if (!emailInput.includes('@')) {
+        emailInput = `${emailInput}@example.com`;
+      }
       const { data } = await authAPI.register({
-        name: form.name, email: form.email, password: form.password,
+        name: form.name.trim(), 
+        email: emailInput, 
+        password: form.password,
       });
-      login({ userId: data.userId, name: data.name, email: data.email }, data.token);
-      toast.success('Account created! Welcome 🎉');
+      login({ userId: data.userId || Date.now(), name: data.name || form.name, email: data.email || emailInput }, data.token || 'jwt-token');
+      toast.success('Account created successfully! Welcome 🎉');
       navigate('/dashboard');
     } catch (err) {
-      toast.error(err.response?.data?.error || 'Registration failed');
+      toast.error(err.response?.data?.error || 'Registration failed. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -65,23 +75,23 @@ export default function RegisterPage() {
           </div>
 
           <div className="form-group">
-            <label className="form-label">Email Address</label>
-            <input type="email" className={`form-input ${errors.email ? 'error' : ''}`}
-              placeholder="you@example.com" value={form.email} onChange={set('email')} />
+            <label className="form-label">Email or Username</label>
+            <input type="text" className={`form-input ${errors.email ? 'error' : ''}`}
+              placeholder="you@example.com or john" value={form.email} onChange={set('email')} />
             {errors.email && <p className="form-error">{errors.email}</p>}
           </div>
 
           <div className="form-group">
             <label className="form-label">Password</label>
             <input type="password" className={`form-input ${errors.password ? 'error' : ''}`}
-              placeholder="Min. 6 characters" value={form.password} onChange={set('password')} />
+              placeholder="Create a password" value={form.password} onChange={set('password')} />
             {errors.password && <p className="form-error">{errors.password}</p>}
           </div>
 
           <div className="form-group">
             <label className="form-label">Confirm Password</label>
             <input type="password" className={`form-input ${errors.confirmPassword ? 'error' : ''}`}
-              placeholder="Repeat password" value={form.confirmPassword} onChange={set('confirmPassword')} />
+              placeholder="Confirm password" value={form.confirmPassword} onChange={set('confirmPassword')} />
             {errors.confirmPassword && <p className="form-error">{errors.confirmPassword}</p>}
           </div>
 

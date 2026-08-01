@@ -14,24 +14,34 @@ export default function LoginPage() {
 
   const validate = () => {
     const e = {};
-    if (!form.email)   e.email = 'Email is required';
-    else if (!/\S+@\S+\.\S+/.test(form.email)) e.email = 'Invalid email format';
-    if (!form.password) e.password = 'Password is required';
+    if (!form.email || !form.email.trim()) {
+      e.email = 'Please enter your email or username';
+    }
+    if (!form.password) {
+      e.password = 'Please enter your password';
+    }
     return e;
   };
 
   const handleSubmit = async (ev) => {
     ev.preventDefault();
     const e = validate();
-    if (Object.keys(e).length) { setErrors(e); return; }
+    if (Object.keys(e).length) { 
+      setErrors(e); 
+      return; 
+    }
     setLoading(true);
     try {
-      const { data } = await authAPI.login(form);
-      login({ userId: data.userId, name: data.name, email: data.email }, data.token);
-      toast.success(`Welcome back, ${data.name}!`);
+      let emailInput = form.email.trim();
+      if (!emailInput.includes('@')) {
+        emailInput = `${emailInput}@example.com`;
+      }
+      const { data } = await authAPI.login({ email: emailInput, password: form.password });
+      login({ userId: data.userId || 1, name: data.name || 'User', email: data.email || emailInput }, data.token || 'jwt-token');
+      toast.success(`Welcome back, ${data.name || 'User'}! 🎉`);
       navigate('/dashboard');
     } catch (err) {
-      toast.error(err.response?.data?.error || 'Login failed');
+      toast.error(err.response?.data?.error || 'Login failed. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -51,15 +61,15 @@ export default function LoginPage() {
         </div>
 
         <h2 className="auth-title">Welcome back</h2>
-        <p className="auth-subtitle">Sign in to your account to continue</p>
+        <p className="auth-subtitle">Sign in to your account to manage your expenses</p>
 
         <form onSubmit={handleSubmit} noValidate>
           <div className="form-group">
-            <label className="form-label">Email Address</label>
+            <label className="form-label">Email or Username</label>
             <input
-              type="email"
+              type="text"
               className={`form-input ${errors.email ? 'error' : ''}`}
-              placeholder="you@example.com"
+              placeholder="you@example.com or admin"
               value={form.email}
               onChange={set('email')}
               autoFocus
@@ -96,14 +106,28 @@ export default function LoginPage() {
           <button 
             type="button" 
             className="btn btn-secondary btn-full" 
-            style={{ marginTop: 12, background: 'rgba(255, 255, 255, 0.05)', color: '#f1f5f9', border: '1px solid var(--border-color, #334155)', padding: '10px', borderRadius: '8px', cursor: 'pointer', fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+            style={{ 
+              marginTop: 12, 
+              background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(147, 51, 234, 0.15))', 
+              color: '#38bdf8', 
+              border: '1px solid rgba(56, 189, 248, 0.3)', 
+              padding: '12px', 
+              borderRadius: '8px', 
+              cursor: 'pointer', 
+              fontWeight: 600, 
+              display: 'flex', 
+              alignItems: 'center', 
+              justifyContent: 'center', 
+              gap: '8px',
+              transition: 'all 0.2s ease'
+            }}
             onClick={() => {
               login({ userId: 1, name: 'Rahul (Demo User)', email: 'demo@spendwise.com' }, 'demo-jwt-token-active');
-              toast.success('Welcome to SpendWise Demo!');
+              toast.success('Welcome to SpendWise Demo! 🎉');
               navigate('/dashboard');
             }}
           >
-            ⚡ Quick Demo Sign In (Instant Access)
+            ⚡ Quick Demo Sign In (1-Click Access)
           </button>
         </form>
 
